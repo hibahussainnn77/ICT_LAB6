@@ -1,10 +1,12 @@
 #include <iostream>
+
 using namespace std;
+
 int main() {
     int limit = 0;
     cout << "Enter limit (2 to 100): ";
     cin >> limit;
-    int primeCount = 0;
+    int primeCounttt = 0;
     int primeSum = 0;
     cout << "Prime channels: ";
     for (int candidate = 2; candidate <= limit; ++candidate) {
@@ -17,11 +19,11 @@ int main() {
         }
         if (isPrime) {
             cout << candidate << " ";
-            primeCount++;
+            primeCounttt++;
             primeSum += candidate;
         }
     }
-    cout << "\nTotal Prime Count: " << primeCount << endl;
+    cout << "Total Prime Count: " << primeCount << endl;
     cout << "Total Prime Sum: " << primeSum << endl;
 
     return 0;
