@@ -11,7 +11,7 @@ int main() {
     cout << "Prime channels: ";
     for (int candidate = 2; candidate <= limit; ++candidate) {
         bool isPrime = true;
-        
+
         for (int divisor = 2; divisor < candidate; ++divisor) {
             if (candidate % divisor == 0) {
                 isPrime = false;
@@ -22,6 +22,7 @@ int main() {
         if (isPrime) {
             cout << candidate << " ";
             primeCounttt++;
+            
             primeSum += candidate;
         }
     }
